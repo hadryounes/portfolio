@@ -19,3 +19,6 @@ github_username:  hadryounes
 
 # Build settings
 markdown: kramdown
+safe: true
+lsi: false
+source: your top-level directory
