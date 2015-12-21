@@ -114,6 +114,10 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
     color:#111111;
 }
 
+.header-title {
+    margin: 6px 0;
+}
+
 
 //Exclusive Large screens setup
 @media screen and (min-width:768px) {
@@ -134,6 +138,8 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
         color:white;
     }
 }
+
+
 
 //Exclusive Small screens setup
 @media screen and (max-width:768px) {
