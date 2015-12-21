@@ -53,12 +53,14 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-// Temporary styles
+// Custom Style
 
 .page-content {
     min-height:500px;
 }
 
+
+// Header
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-bottom: 10px;
 }
@@ -76,8 +78,6 @@ $on-laptop:        800px;
     text-transform: capitalize;
 }
 
-// Custom starts here
-
 .site-title {
     text-transform:uppercase;
     font-weight:400;
@@ -91,8 +91,6 @@ $on-laptop:        800px;
     border-color: #fdfdfd;
 }
 
-
-
 .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #000;
 }
@@ -101,12 +99,28 @@ $on-laptop:        800px;
     background-color: #fdfdfd;
 }
 
+
+//Exclusive Large screens setup
 @media screen and (min-width:768px) {
-   .container-fluid {
+    .container-fluid {
         margin:auto 50px;
     } 
+    
+    .navbar-nav li:last-child a {
+        color: white;
+        font-weight: 400;
+        background: #17d676;
+        padding: 10px 15px;
+        margin: 6px auto 6px 24px;
+    }
+    
+    .navbar-nav li:last-child a:hover {
+        background: $grey-color-dark;
+        color:white;
+    }
 }
 
+//Exclusive Small screens setup
 @media screen and (max-width:768px) {
    .navbar-collapse {
         border-bottom: 1px solid #e8e8e8;
@@ -117,8 +131,34 @@ $on-laptop:        800px;
     }
 }
 
+//Content
+.tagline {
+    font-size: 1.6em;
+    font-family:"Open Sans", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.about-me h1 {
+    text-align:center;
+    font-weight:700;
+    margin-bottom: 40px;
+}
+
+.about-me p {
+    font-size:1.2em;
+    font-weight:400;
+    line-height:32px;
+    padding:0px 30px;
+    //text-align: justify;
+}
+
+.about-me p .bold {
+    font-weight:600;
+}
 
 
+
+//Footer
 .copyright-text {
     font-size:0.9em;
     font-weight:100;
