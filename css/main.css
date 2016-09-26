@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0; }
@@ -21,7 +20,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -158,9 +157,14 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 4px solid #424242;
-  min-height: 80px;
-  position: relative; }
+  border-top: 0px solid #424242;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: white;
+  top: 0;
+  border-bottom: 1px solid #f0f0f0; }
 
 .site-title {
   font-size: 26px;
@@ -222,7 +226,8 @@ pre {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: 50px; }
 
 .footer-heading {
   font-size: 18px;
@@ -477,12 +482,25 @@ pre {
 .align-center {
   text-align: center; }
 
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.bold {
+  font-weight: 600; }
+
 .page-content {
   min-height: 500px;
   padding: 10px 0; }
 
+#logo {
+  height: 50px;
+  width: 50px; }
+
 .navbar {
-  margin: 10px auto 0px; }
+  margin: 0px; }
 
 .navbar-default {
   background-color: transparent;
@@ -514,22 +532,32 @@ pre {
   color: #111111; }
 
 .header-title {
-  margin: 6px 0; }
+  margin-top: 14px; }
+
+.navbar-nav {
+  margin-left: 70px;
+  margin-top: 13px; }
 
 @media screen and (min-width: 768px) {
   .container-fluid {
     margin: auto 50px; }
 
-  .navbar-nav li:last-child a, .navbar-nav li:last-child a:visited {
+  .hire-me, .hire-me:visited {
     color: white;
     font-weight: 400;
     background: #17d676;
-    padding: 10px 15px;
-    margin: 6px auto 6px 24px; }
+    padding: 14px 60px;
+    height: 50px;
+    font-size: 1em;
+    float: right;
+    text-transform: uppercase;
+    margin: 14px auto 6px 24px;
+    text-decoration: none !important; }
 
-  .navbar-nav li:last-child a:hover, .navbar-nav li:last-child a.disabled {
+  .hire-me:hover {
     background: #424242;
-    color: white; } }
+    color: white;
+    text-decoration: none; } }
 @media screen and (max-width: 768px) {
   .navbar-collapse {
     border-bottom: 1px solid #e8e8e8; }
@@ -549,16 +577,16 @@ pre {
   background-position: center; }
 
 .content-section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 50px; }
   .content-section h1 {
     text-align: center;
     font-weight: 600;
-    margin: 50px auto; }
+    margin: 30px auto 20px; }
   .content-section h2, .content-section h3 {
     text-align: center; }
   .content-section h2 {
-    margin-bottom: 60px; }
+    margin-bottom: 45px; }
   .content-section .push {
     position: relative;
     height: 40px;
@@ -619,52 +647,55 @@ pre {
   margin-bottom: 25px;
   color: grey; }
 
-.contact-section h1 {
-  text-align: center;
-  font-weight: 600;
-  margin: 30px auto; }
-.contact-section h2 {
-  text-align: center;
-  font-size: 1.7em;
-  margin: 50px auto 30px; }
-.contact-section h3 {
-  text-align: left;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-top: 50px; }
-.contact-section hr {
-  margin-top: 40px; }
-.contact-section p.title-text {
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 32px;
-  padding: 0px 20px;
-  color: #3c3c3c;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  text-align: center; }
-.contact-section .hire-me-btn {
-  background: #17d676;
-  margin: 40px auto 30px;
-  border: none;
-  outline: none;
-  padding: 17px; }
-  .contact-section .hire-me-btn:active {
-    background: #424242;
-    outline: none; }
-.contact-section ul > li {
-  list-style: none;
-  padding: 0; }
-.contact-section ul > li > p {
-  color: #2d2f39; }
-.contact-section ul > li > p > i.fa-check {
-  color: #17d676; }
-.contact-section ul > li > p > i.fa-times {
-  color: #E86161; }
+.contact-section {
+  margin-top: 110px; }
+  .contact-section h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 30px auto; }
+  .contact-section h2 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 40px auto 30px; }
+  .contact-section h3 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 50px; }
+  .contact-section hr {
+    margin-top: 30px; }
+  .contact-section p.title-text {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0px 20px;
+    color: #3c3c3c;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center; }
+  .contact-section .hire-me-btn {
+    background: #17d676;
+    margin: 20px auto 20px;
+    border: none;
+    outline: none;
+    padding: 17px;
+    border-radius: 0; }
+    .contact-section .hire-me-btn:active {
+      background: #424242;
+      outline: none; }
+  .contact-section ul > li {
+    list-style: none;
+    padding: 0; }
+  .contact-section ul > li > p {
+    color: #2d2f39; }
+  .contact-section ul > li > p > i.fa-check {
+    color: #17d676; }
+  .contact-section ul > li > p > i.fa-times {
+    color: #E86161; }
 
 .av-calendar {
   position: relative;
-  margin: 60px auto 40px; }
+  margin: 50px auto 30px; }
   .av-calendar .av-month {
     border-right: 1px solid #e7e7e7;
     padding: 0px 4px;
@@ -728,26 +759,201 @@ pre {
       box-shadow: none; }
 
 .banner {
-  position: relative; }
-  .banner .banner-bg {
-    position: absolute;
-    width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #f6f6f6;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 80px; }
+  .banner h2 {
+    font-size: 2.26666667em;
+    font-weight: 700;
+    margin-top: 60px;
+    color: #212121; }
+  .banner h3 {
+    font-size: 1.33333333em;
+    font-weight: 400;
+    color: #212121; }
+  .banner p {
+    color: #676767;
+    font-size: 1em;
+    font-weight: 400; }
+  .banner .banner-img {
+    float: right;
+    -webkit-box-shadow: 0 4px 12px 5px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 12px 5px rgba(0, 0, 0, 0.03);
+    border-radius: 4px; }
+  .banner #banner_botdb {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .banner .banner-tags {
+    margin: 10px 0; }
+    .banner .banner-tags li {
+      display: inline-block;
+      margin-right: 10px; }
+    .banner .banner-tags .banner-tag {
+      display: block;
+      height: 40px;
+      width: auto;
+      border: 1px solid #17d676;
+      background: transparent;
+      color: #212121;
+      padding: 7px 15px;
+      text-decoration: none; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner .banner-tags .banner-tag {
+    font-size: .9em;
+    padding: 7px 10px !important; }
+  .banner h2 {
+    margin-top: 26px; }
+
+  .navbar-nav {
+    margin-left: 30px; }
+
+  .hire-me, .hire-me:visited {
+    padding: 14px 30px;
+    margin: 14px -15px 6px 0px; }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent; }
+
+  .header-title {
+    margin-left: 0px; }
+
+  #work-content .work-text h3 {
+    margin-top: 40px; } }
+@media screen and (max-width: 767px) {
+  .site-header {
     height: auto;
-    z-index: 1; }
-  .banner .banner-content {
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    min-height: 80px;
+    width: 100%;
     z-index: 999;
-    margin: 40px auto;
-    left: 0;
-    right: 0;
+    background: white; }
+
+  .navbar-toggle {
+    padding: 13px 10px;
+    border: 2px solid #cccccc;
+    margin-top: 18px;
+    margin-right: 10px;
+    border-radius: 4px; }
+
+  .navbar-header {
+    min-height: 81px; }
+
+  .banner {
+    margin-top: 80px; }
+
+  .banner-tag {
+    margin-top: 10px; }
+
+  .banner #banner_botdb {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+  .banner h2 {
+    margin-top: 40px; }
+
+  .header-title {
+    margin-left: 15px; }
+
+  .banner h3 {
+    line-height: 1.5em; }
+
+  .navbar-nav {
+    margin-left: 0px;
+    margin-top: 0px;
     text-align: center; }
-    .banner .banner-content h1 {
-      font-size: 3.2em;
-      font-weight: 800;
-      color: white; }
-    .banner .banner-content p {
-      font-size: 1.2em;
-      color: white;
-      font-weight: 100; }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px; }
+
+  .navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .navbar-nav > li {
+    border-bottom: 1px solid #f1f1f1; }
+
+  .hire-me, .hire-me:visited {
+    color: white;
+    font-weight: 400;
+    background: #17d676;
+    padding: 14px 60px;
+    clear: both;
+    font-size: 1em;
+    float: none;
+    text-transform: uppercase;
+    margin: auto;
+    display: block;
+    text-align: center; }
+
+  .navbar-nav {
+    margin-bottom: 0px; } }
+#work-content .work-text h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #464646;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase; }
+#work-content .work-text h4 {
+  font-size: 1em;
+  font-weight: 600;
+  width: auto;
+  display: inline-block;
+  margin: 10px auto; }
+#work-content .work-text .project-points {
+  margin: auto; }
+#work-content .work-text p {
+  margin: auto;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #555555;
+  margin-bottom: 1em; }
+#work-content .work-text p.inline {
+  display: inline; }
+#work-content .work-text p.short {
+  max-width: 480px; }
+#work-content .work-text img.work-img {
+  height: auto;
+  margin: 20px auto 5px;
+  box-shadow: 0 0px 2px rgba(43, 43, 43, 0.1); }
+#work-content .work-text figure figcaption {
+  text-align: left;
+  font-size: .9em;
+  font-style: italic;
+  color: #c1c1c1; }
+#work-content .more-work h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #464646;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase; }
+#work-content .more-work a img {
+  display: block;
+  width: 100%;
+  margin-top: 10px; }
+#work-content .more-work a p {
+  font-size: 1em;
+  font-weight: 500;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+#work-content .more-work a:hover {
+  text-decoration: none; }
+  #work-content .more-work a:hover img {
+    border: none; }
+  #work-content .more-work a:hover p {
+    color: #17d676; }
 
 /*# sourceMappingURL=main.css.map */
