@@ -166,7 +166,7 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
         text-decoration:none !important;
     }
     
-    .hire-me:hover {
+    .hire-me:hover, .hire-me:focus {
         background: $grey-color-dark;
         color:white;
         text-decoration:none;
@@ -351,9 +351,10 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
         padding: 17px;
         border-radius:0;
         
-        &:active {
+        &:active, &:focus {
             background:$grey-color-dark;
             outline:none;
+            color:white;
         }
         
         

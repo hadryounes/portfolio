@@ -554,7 +554,7 @@ pre {
     margin: 14px auto 6px 24px;
     text-decoration: none !important; }
 
-  .hire-me:hover {
+  .hire-me:hover, .hire-me:focus {
     background: #424242;
     color: white;
     text-decoration: none; } }
@@ -680,9 +680,10 @@ pre {
     outline: none;
     padding: 17px;
     border-radius: 0; }
-    .contact-section .hire-me-btn:active {
+    .contact-section .hire-me-btn:active, .contact-section .hire-me-btn:focus {
       background: #424242;
-      outline: none; }
+      outline: none;
+      color: white; }
   .contact-section ul > li {
     list-style: none;
     padding: 0; }
