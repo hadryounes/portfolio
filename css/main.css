@@ -495,6 +495,14 @@ pre {
   min-height: 500px;
   padding: 10px 0; }
 
+a, a:visited {
+  color: #111111;
+  text-decoration: none;
+  font-weight: 500; }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #17d676;
+    text-decoration: none; }
+
 #logo {
   height: 50px;
   width: 50px; }

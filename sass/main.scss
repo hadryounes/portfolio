@@ -83,6 +83,18 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
     padding:10px 0;
 }
 
+a, a:visited {
+    color:#111111;
+    text-decoration:none;
+    font-weight:500;
+    
+    
+    &:hover, &:focus {
+        color:$green;
+        text-decoration:none;
+    }
+}
+
 
 // Header
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
