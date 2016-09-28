@@ -187,7 +187,7 @@ a, a:visited {
 
 
 //Exclusive Small screens setup
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
    .navbar-collapse {
         border-bottom: 1px solid #e8e8e8;
     } 
@@ -367,6 +367,12 @@ a, a:visited {
             color:white !important;
             text-decoration:none;
         }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .btn-more-work, .btn-more-work:visited {
+        width:90% !important;
     }
 }
 
@@ -735,6 +741,7 @@ a, a:visited {
         margin: auto;
         display: block;
         text-align: center;
+        width:100%;
     }
         
     .navbar-nav {
@@ -842,3 +849,54 @@ a, a:visited {
 }
 
 //Exclusive Large screens setup
+
+
+// Homepage Stories 
+
+#stories {
+    .story {
+        position:relative;
+        margin-bottom:40px;
+        
+        .story-thumbnail {
+            .story-img {
+                box-shadow: 0 0px 2px rgba(43,43,43,0.1)
+            }
+            
+            h4 {
+                margin-top: 15px;
+                margin-bottom:10px;
+                font-size: 1.25em;
+                font-weight: 700;
+            }
+        }
+
+        .story-details {
+            display: block;
+            position: relative;
+            //margin-bottom: 30px;
+            height:30px;
+        
+            span {
+                float:left;
+                font-size:.85em;
+                line-height: 1.7em;
+                color:$grey-color;
+            }
+            
+            .read-btn {
+                float:right;
+                border:1px solid $green;
+                width: 80px;
+                height: 30px;
+                text-align: center;
+                padding-top: 3px;
+                border-radius: 18px;
+                font-size: .95em;
+                display:block;
+            }
+            
+        }
+        
+    }
+}

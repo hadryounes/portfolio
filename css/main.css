@@ -565,7 +565,7 @@ a, a:visited {
     background: #424242;
     color: white !important;
     text-decoration: none; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar-collapse {
     border-bottom: 1px solid #e8e8e8; }
 
@@ -689,6 +689,9 @@ a, a:visited {
     color: white !important;
     text-decoration: none; }
 
+@media screen and (max-width: 767px) {
+  .btn-more-work, .btn-more-work:visited {
+    width: 90% !important; } }
 .contact-section {
   margin-top: 110px; }
   .contact-section h1 {
@@ -934,7 +937,8 @@ a, a:visited {
     text-transform: uppercase;
     margin: auto;
     display: block;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
   .navbar-nav {
     margin-bottom: 0px; } }
@@ -998,5 +1002,35 @@ a, a:visited {
     border: none; }
   #work-content .more-work a:hover p {
     color: #17d676; }
+
+#stories .story {
+  position: relative;
+  margin-bottom: 40px; }
+  #stories .story .story-thumbnail .story-img {
+    box-shadow: 0 0px 2px rgba(43, 43, 43, 0.1); }
+  #stories .story .story-thumbnail h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    font-weight: 700; }
+  #stories .story .story-details {
+    display: block;
+    position: relative;
+    height: 30px; }
+    #stories .story .story-details span {
+      float: left;
+      font-size: .85em;
+      line-height: 1.7em;
+      color: #828282; }
+    #stories .story .story-details .read-btn {
+      float: right;
+      border: 1px solid #17d676;
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      padding-top: 3px;
+      border-radius: 18px;
+      font-size: .95em;
+      display: block; }
 
 /*# sourceMappingURL=main.css.map */
