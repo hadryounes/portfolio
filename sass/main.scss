@@ -86,7 +86,6 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
 a, a:visited {
     color:#111111;
     text-decoration:none;
-    font-weight:500;
     
     
     &:hover, &:focus {
@@ -180,7 +179,7 @@ a, a:visited {
     
     .hire-me:hover, .hire-me:focus {
         background: $grey-color-dark;
-        color:white;
+        color:white !important;
         text-decoration:none;
     }
 }
@@ -305,15 +304,70 @@ a, a:visited {
 }
 
 
-.box {
-    height:250px;
-    width:100%;
-    background:#f8f8f8;
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom:25px;
-    color:grey;
+// My work - Home page
+
+#work > .my-work {
+    
+    .home-thumbnail {
+        position:relative;
+        width:100%;
+        height:auto;
+        margin-bottom:30px;
+            
+        .box {
+            height:auto;
+            width:100%;
+            display:block;
+            background:#f8f8f8;
+            box-shadow: 0 1px 2px rgba(0,0,0,.1);
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-bottom:10px;
+        }
+        
+        a.project-title {
+            float:left;
+            font-size:1 em;
+            font-weight:700;
+            margin-bottom: 30px;
+            text-transform:uppercase;
+        }
+
+        .tags {
+            width: auto;
+            float: right;
+            font-size: .85em;
+            color:grey;
+            margin-bottom: 30px;
+            
+            a {
+                //color:$green;
+                color:$grey-color;
+                font-weight:300;
+                
+                &:hover {
+                    color:$green;
+                }
+            }
+        }
+    }
+    
+    .btn-more-work, .btn-more-work:visited {
+        border: 2px solid $green;
+        padding: 13px 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        width: 35%;
+        margin: 30px auto 50px;
+        text-decoration:none;
+        
+        &:hover, &:focus {
+            background:$green;
+            color:white !important;
+            text-decoration:none;
+        }
+    }
 }
 
 // Contact section

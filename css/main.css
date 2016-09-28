@@ -497,8 +497,7 @@ pre {
 
 a, a:visited {
   color: #111111;
-  text-decoration: none;
-  font-weight: 500; }
+  text-decoration: none; }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #17d676;
     text-decoration: none; }
@@ -564,7 +563,7 @@ a, a:visited {
 
   .hire-me:hover, .hire-me:focus {
     background: #424242;
-    color: white;
+    color: white !important;
     text-decoration: none; } }
 @media screen and (max-width: 768px) {
   .navbar-collapse {
@@ -645,15 +644,50 @@ a, a:visited {
   text-align: center;
   margin: 10px auto; }
 
-.box {
-  height: 250px;
+#work > .my-work .home-thumbnail {
+  position: relative;
   width: 100%;
-  background: #f8f8f8;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-bottom: 25px;
-  color: grey; }
+  height: auto;
+  margin-bottom: 30px; }
+  #work > .my-work .home-thumbnail .box {
+    height: auto;
+    width: 100%;
+    display: block;
+    background: #f8f8f8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px; }
+  #work > .my-work .home-thumbnail a.project-title {
+    float: left;
+    font-size: 1 em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+  #work > .my-work .home-thumbnail .tags {
+    width: auto;
+    float: right;
+    font-size: .85em;
+    color: grey;
+    margin-bottom: 30px; }
+    #work > .my-work .home-thumbnail .tags a {
+      color: #828282;
+      font-weight: 300; }
+      #work > .my-work .home-thumbnail .tags a:hover {
+        color: #17d676; }
+#work > .my-work .btn-more-work, #work > .my-work .btn-more-work:visited {
+  border: 2px solid #17d676;
+  padding: 13px 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  width: 35%;
+  margin: 30px auto 50px;
+  text-decoration: none; }
+  #work > .my-work .btn-more-work:hover, #work > .my-work .btn-more-work:focus, #work > .my-work .btn-more-work:visited:hover, #work > .my-work .btn-more-work:visited:focus {
+    background: #17d676;
+    color: white !important;
+    text-decoration: none; }
 
 .contact-section {
   margin-top: 110px; }
