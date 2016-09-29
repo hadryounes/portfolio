@@ -644,6 +644,51 @@ a, a:visited {
   text-align: center;
   margin: 10px auto; }
 
+.social-icons {
+  width: 337px;
+  display: block;
+  margin: auto;
+  position: relative; }
+  .social-icons ul {
+    padding: 0px;
+    margin-left: 0px;
+    height: 50px;
+    margin-bottom: 0px; }
+    .social-icons ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 5px; }
+      .social-icons ul li a {
+        display: block;
+        height: 33px;
+        width: 33px;
+        background-image: url(../img/social-icons.png);
+        background-size: 463px 67px;
+        background-repeat: no-repeat;
+        background-position-y: -34px; }
+        .social-icons ul li a:hover, .social-icons ul li a:focus {
+          background-position-y: 1px; }
+      .social-icons ul li .facebook {
+        background-position-x: 0px; }
+      .social-icons ul li .twitter {
+        background-position-x: -43px; }
+      .social-icons ul li .instagram {
+        background-position-x: -86px; }
+      .social-icons ul li .dribbble {
+        background-position-x: -172px; }
+      .social-icons ul li .medium {
+        background-position-x: -215px; }
+      .social-icons ul li .github {
+        background-position-x: -129px; }
+      .social-icons ul li .behance {
+        background-position-x: -258px; }
+      .social-icons ul li .skype {
+        background-position-x: -344px; }
+      .social-icons ul li .linkedin {
+        background-position-x: -387px; }
+      .social-icons ul li .codepen {
+        background-position-x: -473px; }
+
 #work > .my-work .home-thumbnail {
   position: relative;
   width: 100%;

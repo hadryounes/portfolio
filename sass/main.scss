@@ -303,6 +303,50 @@ a, a:visited {
     margin:10px auto;
 }
 
+.social-icons {
+    width: 337px;
+    display: block;
+    margin: auto;
+    position:relative;
+    ul {
+        padding:0px;
+        margin-left:0px;
+        height: 50px;
+        margin-bottom: 0px;
+        li {
+            list-style:none;
+            display:inline-block;
+            margin-left:5px;
+            a {
+                display:block;
+                height:33px;
+                width:33px;
+                background-image:url(../img/social-icons.png);
+                background-size: 463px 67px;
+                background-repeat:no-repeat;
+                background-position-y: -34px;
+                &:hover, &:focus {
+                    background-position-y: 1px;
+                }
+            }
+            
+            .facebook { background-position-x: 0px; }
+            .twitter { background-position-x: -43px; }
+            .instagram {  background-position-x: -86px; }
+            .dribbble {  background-position-x: -172px; }
+            .medium {  background-position-x: -215px; }
+            .github {  background-position-x: -129px; }
+            .behance {  background-position-x: -258px; }
+            .skype {  background-position-x: -344px; }
+            .linkedin {  background-position-x: -387px; }
+            .codepen {  background-position-x: -473px; }
+        }
+    }
+}
+
+
+
+
 
 // My work - Home page
 
