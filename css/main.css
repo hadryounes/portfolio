@@ -565,12 +565,6 @@ a, a:visited {
     background: #424242;
     color: white !important;
     text-decoration: none; } }
-@media screen and (max-width: 767px) {
-  .navbar-collapse {
-    border-bottom: 1px solid #e8e8e8; }
-
-  .header-title {
-    margin-left: 10px; } }
 .profile-picture {
   position: relative;
   height: 180px;
@@ -1077,5 +1071,24 @@ a, a:visited {
       border-radius: 18px;
       font-size: .95em;
       display: block; }
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    border-bottom: 1px solid #e8e8e8; }
+
+  .header-title {
+    margin-left: 10px; }
+
+  .content-section p {
+    padding: 0px; }
+
+  .navbar-nav {
+    margin: 7.5px 0px 0px; }
+
+  .contact-section ul {
+    margin: 0; }
+
+  .contact-section h2 {
+    line-height: 2.1em; } }
 
 /*# sourceMappingURL=main.css.map */
