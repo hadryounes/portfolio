@@ -1,103 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Portfolio - Younes Hadry</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
-    <link href="../css/main.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script type="text/javascript" src="../js/modernizr.custom.29473.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="header-title">
-              <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 width="50px" height="50px" viewBox="0 0 39.995 39.995" enable-background="new 0 0 39.995 39.995" xml:space="preserve">
-                <g>
-                	<g>
-                		<path fill="#17D676" d="M0,0v39.995h39.995V0H0z M38,37.984H2V2h36V37.984z"/>
-                	</g>
-                	<g>
-                		<polygon fill="#424242" points="17,18.997 10,18.997 10,13 8,13 8,19 10,19 10,20.997 17,20.997 17,27 19,27 19,13 17,13 		"/>
-                		<polygon fill="#424242" points="30,20.984 30,19 23,19 23,13 21,13 21,27 23,27 23,21 30,21 30,27 32,27 32,20.984 		"/>
-                	</g>
-                </g>
-              </svg>
-            </div><!-- /.header-title -->
-          </div><!-- /.navbar-header -->
-                
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-left">
-              <li><a href="index.html" class="menu-link">HOME</a></li>
-              <li><a href="about.html" class="menu-link">about me</a></li>
-              <li><a href="work.html" class="menu-link">WORK</a></li>
-              <li><a href="https://medium.com/@hadryounes" class="menu-link" target="_blank">blog</a></li>
-            </ul>
-            <a href="contact.html" class="hire-me" style="float:right">Hire me !</a>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav><!-- /.navbar -->
-    </header><!-- /.site-header -->
-    
-    <section id="portfolio-grid">
+<head>
 
-    	
-    </section>
+	<meta charset="utf-8">
+	<title>Create A Simple Responsive Portfolio Page with Filtering and Hover Effect</title>
+	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <footer class="site-footer">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-sm-12 hidden-xs">
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="https://www.facebook.com/hadryounes" class="social-icon facebook" target="_blank"></a></li>
-                        <li><a href="https://twitter.com/hadryounes" class="social-icon twitter" target="_blank"></a></li>
-                        <li><a href="https://dribbble.com/hadry" class="social-icon dribbble" target="_blank"></a></li>
-                        <li><a href="https://ma.linkedin.com/in/younes-hadry-904a2524" class="social-icon linkedin" target="_blank"></a></li>
-                        <li><a href="https://www.instagram.com/hadryounes/" class="social-icon instagram" target="_blank"></a></li>
-                        <li><a href="https://github.com/hadryounes" class="social-icon github" target="_blank"></a></li>
-                        <li><a href="https://medium.com/@hadryounes" class="social-icon medium" target="_blank"></a></li>
-                        <li><a href="https://www.behance.net/hadryounes" class="social-icon behance" target="_blank"></a></li>
-                        <li><a href="http://codepen.io/hadryounes/" class="social-icon codepen" target="_blank"></a></li>
-                    </ul>
-                </div><!--/.social-icons-->
-            </div><!--/.col-lg-6-->
-        </div><!--/.row-->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="copyright-text">
-              Copyright © youneshadry.com 2016. All rights reserved.
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+
+<div id="info">
+	<div class="info-wrapper">
+		<a href="http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect"><b>Create A Simple Responsive Portfolio Page with Filtering and Hover Effect</b></a>
+		<p>In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.  <a href="http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect">Read Tutorial</a></p>
+	</div>
+</div>	
+
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+			<li><span class="filter" data-filter=".app">App</span></li>
+			<li><span class="filter" data-filter=".card">Card</span></li>
+			<li><span class="filter" data-filter=".icon">Icon</span></li>
+			<li><span class="filter" data-filter=".logo">Logo</span></li>
+			<li><span class="filter" data-filter=".web">Web</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<img src="images/portfolios/logo/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bird Document</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/app/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Visual Infography</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="images/portfolios/web/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/card/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Typography Company</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="images/portfolios/app/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Weatherette</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/card/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">BMF</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/card/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Techlion</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/logo/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">KittyPic</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/app/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Graph Plotting</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/card/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">QR Quick Response</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/logo/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mobi Sock</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/logo/7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Village Community Church</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/icon/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Domino's Pizza</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="images/portfolios/web/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Backend Admin</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/icon/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Instagram</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="images/portfolios/web/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Student Guide</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="images/portfolios/icon/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scoccer</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+					<img src="images/portfolios/icon/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">3D Map</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="images/portfolios/web/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Note</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/logo/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Native Designers</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/logo/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bookworm</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/icon/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sandwich</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/card/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Reality</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="images/portfolios/logo/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Speciallisterne</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+										
+			
+		</div>
+		
+	</div><!-- container -->
+
+</body>
 </html>
