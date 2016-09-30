@@ -185,18 +185,6 @@ a, a:visited {
 }
 
 
-
-//Exclusive Small screens setup
-@media screen and (max-width:767px) {
-   .navbar-collapse {
-        border-bottom: 1px solid #e8e8e8;
-    } 
-    
-    .header-title {
-        margin-left:10px;
-    }
-}
-
 //Content
 
 
@@ -947,3 +935,34 @@ a, a:visited {
 
 // Work page style
 
+
+
+
+
+//Exclusive Small screens setup
+@media screen and (max-width:767px) {
+   .navbar-collapse {
+        border-bottom: 1px solid #e8e8e8;
+    } 
+    
+    .header-title {
+        margin-left:10px;
+    }
+    
+    .content-section p {
+        padding: 0px;
+    }
+
+    
+    .navbar-nav {
+        margin: 7.5px 0px 0px; 
+    }
+    
+    .contact-section ul {
+        margin:0;
+    }
+    
+    .contact-section h2 {
+        line-height: 2.1em;
+    }
+}
