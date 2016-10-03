@@ -499,7 +499,7 @@ a, a:visited {
   color: #111111;
   text-decoration: none; }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #17d676;
+    color: #00A1C0;
     text-decoration: none; }
 
 #logo {
@@ -552,7 +552,7 @@ a, a:visited {
   .hire-me, .hire-me:visited {
     color: white;
     font-weight: 400;
-    background: #17d676;
+    background: #00A1C0;
     padding: 14px 60px;
     height: 50px;
     font-size: 1em;
@@ -604,10 +604,10 @@ a, a:visited {
     font-weight: 600;
     color: #111; }
   .content-section p a:hover {
-    color: #17d676; }
+    color: #00A1C0; }
 
 .section-title {
-  border-bottom: 3px solid #17d676;
+  border-bottom: 3px solid #00A1C0;
   padding-bottom: 5px; }
 
 .my-skills h4 {
@@ -713,9 +713,9 @@ a, a:visited {
       color: #828282;
       font-weight: 300; }
       #work > .my-work .home-thumbnail .tags a:hover {
-        color: #17d676; }
+        color: #00A1C0; }
 #work > .my-work .btn-more-work, #work > .my-work .btn-more-work:visited {
-  border: 2px solid #17d676;
+  border: 2px solid #00A1C0;
   padding: 13px 50px;
   text-transform: uppercase;
   font-weight: 700;
@@ -724,7 +724,7 @@ a, a:visited {
   margin: 30px auto 50px;
   text-decoration: none; }
   #work > .my-work .btn-more-work:hover, #work > .my-work .btn-more-work:focus, #work > .my-work .btn-more-work:visited:hover, #work > .my-work .btn-more-work:visited:focus {
-    background: #17d676;
+    background: #00A1C0;
     color: white !important;
     text-decoration: none; }
 
@@ -758,7 +758,7 @@ a, a:visited {
     margin-bottom: 10px;
     text-align: center; }
   .contact-section .hire-me-btn {
-    background: #17d676;
+    background: #00A1C0;
     margin: 20px auto 20px;
     border: none;
     outline: none;
@@ -774,7 +774,7 @@ a, a:visited {
   .contact-section ul > li > p {
     color: #2d2f39; }
   .contact-section ul > li > p > i.fa-check {
-    color: #17d676; }
+    color: #00A1C0; }
   .contact-section ul > li > p > i.fa-times {
     color: #E86161; }
 
@@ -834,13 +834,13 @@ a, a:visited {
     box-shadow: none;
     border-radius: 0; }
     .contact-form input[type="email"]:focus, .contact-form input[type="text"]:focus {
-      border-color: #17d676; }
+      border-color: #00A1C0; }
   .contact-form textarea {
     width: 100%;
     box-shadow: none;
     border-radius: 0; }
     .contact-form textarea:focus {
-      border-color: #17d676;
+      border-color: #00A1C0;
       box-shadow: none; }
 
 .banner {
@@ -881,7 +881,7 @@ a, a:visited {
       display: block;
       height: 40px;
       width: auto;
-      border: 1px solid #17d676;
+      border: 1px solid #00A1C0;
       background: transparent;
       color: #212121;
       padding: 7px 15px;
@@ -1040,7 +1040,7 @@ a, a:visited {
   #work-content .more-work a:hover img {
     border: none; }
   #work-content .more-work a:hover p {
-    color: #17d676; }
+    color: #00A1C0; }
 
 #stories .story {
   position: relative;
@@ -1063,7 +1063,7 @@ a, a:visited {
       color: #828282; }
     #stories .story .story-details .read-btn {
       float: right;
-      border: 1px solid #17d676;
+      border: 1px solid #00A1C0;
       width: 80px;
       height: 30px;
       text-align: center;

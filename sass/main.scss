@@ -13,7 +13,8 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$green:            #17d676;
+//$green:            #17d676;
+$green : #00A1C0;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -167,7 +168,7 @@ a, a:visited {
     .hire-me, .hire-me:visited {
         color: white;
         font-weight: 400;
-        background: #17d676;
+        background: $green;
         padding: 14px 60px;
         height: 50px;
         font-size: 1em;
