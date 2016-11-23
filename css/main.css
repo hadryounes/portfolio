@@ -479,6 +479,124 @@ pre {
   .highlight .il {
     color: #099; }
 
+.contact-section {
+  margin-top: 110px; }
+  .contact-section h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 30px auto; }
+  .contact-section h2 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 40px auto 30px; }
+  .contact-section h3 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 50px; }
+  .contact-section hr {
+    margin-top: 30px; }
+  .contact-section p.title-text {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0px 20px;
+    color: #3c3c3c;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center; }
+  .contact-section .hire-me-btn {
+    background: #17d676;
+    margin: 20px auto 20px;
+    border: none;
+    outline: none;
+    padding: 17px;
+    border-radius: 0; }
+    .contact-section .hire-me-btn:active, .contact-section .hire-me-btn:focus {
+      background: #424242;
+      outline: none;
+      color: white; }
+  .contact-section ul > li {
+    list-style: none;
+    padding: 0; }
+  .contact-section ul > li > p {
+    color: #2d2f39; }
+  .contact-section ul > li > p > i.fa-check {
+    color: #17d676; }
+  .contact-section ul > li > p > i.fa-times {
+    color: #E86161; }
+
+.contact-form {
+  margin-top: 30px; }
+  .contact-form label {
+    font-weight: 500;
+    font-size: 1.2em; }
+  .contact-form input[type="email"], .contact-form input[type="text"] {
+    height: 50px;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0; }
+    .contact-form input[type="email"]:focus, .contact-form input[type="text"]:focus {
+      border-color: #17d676; }
+  .contact-form textarea {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0; }
+    .contact-form textarea:focus {
+      border-color: #17d676;
+      box-shadow: none; }
+
+.av-calendar {
+  position: relative;
+  margin: 50px auto 30px; }
+  .av-calendar .av-month {
+    border-right: 1px solid #e7e7e7;
+    padding: 0px 4px;
+    text-align: center; }
+  .av-calendar .av-calendar-item {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer; }
+  .av-calendar .av {
+    background: #ADEA74; }
+    .av-calendar .av:hover {
+      background: #A2E265; }
+  .av-calendar .part-av {
+    background: #FFB86F; }
+    .av-calendar .part-av:hover {
+      background: #FFA345; }
+  .av-calendar .not-av {
+    background: #E86161; }
+    .av-calendar .not-av:hover {
+      background: #E85656; }
+  .av-calendar .passed-av {
+    background: #E6E6E6; }
+  .av-calendar .calendar-key {
+    margin-top: 30px;
+    font-size: .9em;
+    color: #616161; }
+    .av-calendar .calendar-key .key-item {
+      display: block;
+      margin-bottom: 10px;
+      line-height: 13px; }
+      .av-calendar .calendar-key .key-item i {
+        font-size: 1.2em;
+        margin-right: 5px;
+        margin-left: 5px; }
+      .av-calendar .calendar-key .key-item i.green {
+        color: #ADEA74; }
+      .av-calendar .calendar-key .key-item i.orange {
+        color: #FFA345; }
+      .av-calendar .calendar-key .key-item i.red {
+        color: #E86161; }
+
+@media screen and (max-width: 767px) {
+  .contact-section ul {
+    margin: 0; }
+
+  .contact-section h2 {
+    line-height: 2.1em; } }
 .align-center {
   text-align: center; }
 
@@ -731,118 +849,6 @@ a, a:visited {
 @media screen and (max-width: 767px) {
   .btn-more-work, .btn-more-work:visited {
     width: 90% !important; } }
-.contact-section {
-  margin-top: 110px; }
-  .contact-section h1 {
-    text-align: center;
-    font-weight: 600;
-    margin: 30px auto; }
-  .contact-section h2 {
-    text-align: center;
-    font-size: 1.7em;
-    margin: 40px auto 30px; }
-  .contact-section h3 {
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-top: 50px; }
-  .contact-section hr {
-    margin-top: 30px; }
-  .contact-section p.title-text {
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 32px;
-    padding: 0px 20px;
-    color: #3c3c3c;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    text-align: center; }
-  .contact-section .hire-me-btn {
-    background: #17d676;
-    margin: 20px auto 20px;
-    border: none;
-    outline: none;
-    padding: 17px;
-    border-radius: 0; }
-    .contact-section .hire-me-btn:active, .contact-section .hire-me-btn:focus {
-      background: #424242;
-      outline: none;
-      color: white; }
-  .contact-section ul > li {
-    list-style: none;
-    padding: 0; }
-  .contact-section ul > li > p {
-    color: #2d2f39; }
-  .contact-section ul > li > p > i.fa-check {
-    color: #17d676; }
-  .contact-section ul > li > p > i.fa-times {
-    color: #E86161; }
-
-.av-calendar {
-  position: relative;
-  margin: 50px auto 30px; }
-  .av-calendar .av-month {
-    border-right: 1px solid #e7e7e7;
-    padding: 0px 4px;
-    text-align: center; }
-  .av-calendar .av-calendar-item {
-    height: 50px;
-    width: 100%;
-    margin-top: 10px;
-    cursor: pointer; }
-  .av-calendar .av {
-    background: #ADEA74; }
-    .av-calendar .av:hover {
-      background: #A2E265; }
-  .av-calendar .part-av {
-    background: #FFB86F; }
-    .av-calendar .part-av:hover {
-      background: #FFA345; }
-  .av-calendar .not-av {
-    background: #E86161; }
-    .av-calendar .not-av:hover {
-      background: #E85656; }
-  .av-calendar .passed-av {
-    background: #E6E6E6; }
-  .av-calendar .calendar-key {
-    margin-top: 30px;
-    font-size: .9em;
-    color: #616161; }
-    .av-calendar .calendar-key .key-item {
-      display: block;
-      margin-bottom: 10px;
-      line-height: 13px; }
-      .av-calendar .calendar-key .key-item i {
-        font-size: 1.2em;
-        margin-right: 5px;
-        margin-left: 5px; }
-      .av-calendar .calendar-key .key-item i.green {
-        color: #ADEA74; }
-      .av-calendar .calendar-key .key-item i.orange {
-        color: #FFA345; }
-      .av-calendar .calendar-key .key-item i.red {
-        color: #E86161; }
-
-.contact-form {
-  margin-top: 30px; }
-  .contact-form label {
-    font-weight: 500;
-    font-size: 1.2em; }
-  .contact-form input[type="email"], .contact-form input[type="text"] {
-    height: 50px;
-    width: 100%;
-    box-shadow: none;
-    border-radius: 0; }
-    .contact-form input[type="email"]:focus, .contact-form input[type="text"]:focus {
-      border-color: #17d676; }
-  .contact-form textarea {
-    width: 100%;
-    box-shadow: none;
-    border-radius: 0; }
-    .contact-form textarea:focus {
-      border-color: #17d676;
-      box-shadow: none; }
-
 .banner {
   position: relative;
   height: auto;
@@ -1083,12 +1089,6 @@ a, a:visited {
     padding: 0px; }
 
   .navbar-nav {
-    margin: 7.5px 0px 0px; }
-
-  .contact-section ul {
-    margin: 0; }
-
-  .contact-section h2 {
-    line-height: 2.1em; } }
+    margin: 7.5px 0px 0px; } }
 
 /*# sourceMappingURL=main.css.map */
