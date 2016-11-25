@@ -25,6 +25,8 @@
     h4 {
         text-align: left;
         font-weight: 600;
+        font-size: 1em;
+        color: #333;
     }
     
     .resume-img {
@@ -39,12 +41,13 @@
             font-weight:600;
             //float:left;
             display: inline;
-            font-size: 1.1em;
+            font-size: 1em;
+            color: #333;
         }
         
         p.job-employer, p.job-range {
-            font-size: .9em;
-            color: #ccc;
+            font-size: .8em;
+            color: #909090;
             padding-left: 20px;
             display: inline;
         }  
@@ -52,12 +55,13 @@
     
     .experience-body {
         margin-bottom: 2em;
+        color: #333;
         li {
             list-style: none;
         }
         h5 {
             font-weight: 400;
-            font-size: 1em;
+            font-size: .9em;
             margin-bottom: 5px;
         }
         p {
@@ -72,10 +76,36 @@
             span {
                 font-size: .9em;
                 font-weight: 400;
-                color: #ccc;
+                color: #909090;
                 padding-left: 10px;
             }
         }
+    }
+    
+    ul.skills-list {
+        padding: 0;
+        margin-left: 0;
+        
+        li {
+            list-style: none;
+            font-size: .9em;
+        }
+    }
+    
+    h4.skill-title {
+        font-weight: 600;
+    }
+}
+
+.resume-head {
+    p>a {
+        font-size: .9em;
+        color: #909090;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+        font-weight: 600;
     }
 }
 
