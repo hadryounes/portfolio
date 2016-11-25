@@ -1,1 +1,86 @@
 // About page
+.about-section {
+    margin-top: 100px;
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        margin: 30px auto 40px;
+    }    
+    p {
+        text-align: center;
+    }
+}
+
+.resume-section {
+    
+    h1 {
+        text-align: center;
+        margin: 20px auto 40px;
+        .section-title {
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+    
+    h4 {
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    .resume-img {
+        margin: auto;
+        display: block;
+        border-radius: 50%;
+    }
+    .experience-head {
+        position: relative;
+        margin-bottom: 10px;
+        p.job-title {
+            font-weight:600;
+            //float:left;
+            display: inline;
+            font-size: 1.1em;
+        }
+        
+        p.job-employer, p.job-range {
+            font-size: .9em;
+            color: #ccc;
+            padding-left: 20px;
+            display: inline;
+        }  
+    }
+    
+    .experience-body {
+        margin-bottom: 2em;
+        li {
+            list-style: none;
+        }
+        h5 {
+            font-weight: 400;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: .9em;
+        }
+        h6 {
+            font-weight: 600;
+            font-size: .9em;
+            margin-bottom: 5px;
+            margin-top: 20px;
+            
+            span {
+                font-size: .9em;
+                font-weight: 400;
+                color: #ccc;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.container {
+    hr {
+        margin: 20px 0;
+    }
+}
