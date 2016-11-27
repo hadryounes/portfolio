@@ -505,17 +505,6 @@ pre {
     margin-top: 40px;
     margin-bottom: 10px;
     text-align: center; }
-  .contact-section .hire-me-btn {
-    background: #17d676;
-    margin: 20px auto 20px;
-    border: none;
-    outline: none;
-    padding: 17px;
-    border-radius: 0; }
-    .contact-section .hire-me-btn:active, .contact-section .hire-me-btn:focus {
-      background: #424242;
-      outline: none;
-      color: white; }
   .contact-section ul > li {
     list-style: none;
     padding: 0; }
@@ -525,6 +514,18 @@ pre {
     color: #17d676; }
   .contact-section ul > li > p > i.fa-times {
     color: #E86161; }
+
+.hire-me-btn {
+  background: #17d676;
+  margin: 20px auto 20px;
+  border: none;
+  outline: none;
+  padding: 17px;
+  border-radius: 0; }
+  .hire-me-btn:active, .hire-me-btn:focus, .hire-me-btn:hover {
+    background: #424242;
+    outline: none;
+    color: white; }
 
 .contact-form {
   margin-top: 30px; }
@@ -603,8 +604,25 @@ pre {
     text-align: center;
     font-weight: 600;
     margin: 30px auto 40px; }
+  .about-section h4 {
+    font-weight: 600;
+    font-size: 16px; }
   .about-section p {
-    text-align: center; }
+    text-align: left;
+    font-size: 15px; }
+    .about-section p > a {
+      font-weight: 600;
+      text-decoration: underline; }
+  .about-section ul > li {
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    background-image: url("../img/green-square.gif");
+    background-position: 0px 7px;
+    list-style: none;
+    background-repeat: no-repeat; }
+    .about-section ul > li a {
+      text-decoration: underline !important; }
 
 .resume-section h2 {
   text-align: center;

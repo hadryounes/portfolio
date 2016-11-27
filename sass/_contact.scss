@@ -39,23 +39,6 @@
         text-align: center;
     }
     
-    .hire-me-btn {
-        background:$green;
-        margin:20px auto 20px;
-        border:none;
-        outline:none;
-        padding: 17px;
-        border-radius:0;
-        
-        &:active, &:focus {
-            background:$grey-color-dark;
-            outline:none;
-            color:white;
-        }
-        
-        
-    }
-    
     ul > li {
         list-style:none;
         padding:0;
@@ -74,6 +57,24 @@
     }
     
 }
+
+.hire-me-btn {
+    background:$green;
+    margin:20px auto 20px;
+    border:none;
+    outline:none;
+    padding: 17px;
+    border-radius:0;
+    
+    &:active, &:focus, &:hover {
+        background:$grey-color-dark;
+        outline:none;
+        color:white;
+    }
+    
+    
+}
+    
 
 // Contact Form
 
