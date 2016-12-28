@@ -163,8 +163,7 @@ pre {
   z-index: 999;
   width: 100%;
   background: white;
-  top: 0;
-  border-bottom: 1px solid #f0f0f0; }
+  top: 0; }
 
 .site-title {
   font-size: 26px;
@@ -720,6 +719,49 @@ pre {
     border: 1px solid #f0f0f0;
     background-color: transparent; }
 
+.portfolio-page {
+  margin-top: 80px; }
+  .portfolio-page h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 30px auto 40px; }
+  .portfolio-page h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 30px auto 40px; }
+  .portfolio-page .featured-gallery {
+    position: relative;
+    margin-top: 20px; }
+    .portfolio-page .featured-gallery .item {
+      position: relative;
+      height: auto;
+      width: 100%;
+      margin-bottom: 40px; }
+      .portfolio-page .featured-gallery .item .item-img {
+        background: #e7e7e7;
+        height: 300px;
+        width: 100%; }
+      .portfolio-page .featured-gallery .item .item-title {
+        text-align: left;
+        margin-top: 10px;
+        font-size: 1em;
+        color: #6d6d6d; }
+        .portfolio-page .featured-gallery .item .item-title .item-icons {
+          float: right;
+          color: #909090; }
+  .portfolio-page .more-gallery {
+    position: relative;
+    margin-top: 20px; }
+    .portfolio-page .more-gallery .item {
+      position: relative;
+      height: auto;
+      width: 100%;
+      margin-bottom: 40px; }
+      .portfolio-page .more-gallery .item .item-img {
+        background: #e7e7e7;
+        height: 240px;
+        width: 100%; }
+
 .align-center {
   text-align: center; }
 
@@ -799,7 +841,7 @@ a, a:visited {
     font-size: 1em;
     float: right;
     text-transform: uppercase;
-    margin: 14px auto 6px 24px;
+    margin: 14px -15px 6px 24px;
     text-decoration: none !important; }
 
   .hire-me:hover, .hire-me:focus {
