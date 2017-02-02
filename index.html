@@ -22,7 +22,7 @@
   <body>
     <header class="site-header">
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
@@ -31,30 +31,24 @@
               <span class="icon-bar"></span>
             </button>
             <div class="header-title">
-              <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 width="50px" height="50px" viewBox="0 0 39.995 39.995" enable-background="new 0 0 39.995 39.995" xml:space="preserve">
-                <g>
-                	<g>
-                		<path fill="#17D676" d="M0,0v39.995h39.995V0H0z M38,37.984H2V2h36V37.984z"/>
-                	</g>
-                	<g>
-                		<polygon fill="#424242" points="17,18.997 10,18.997 10,13 8,13 8,19 10,19 10,20.997 17,20.997 17,27 19,27 19,13 17,13 		"/>
-                		<polygon fill="#424242" points="30,20.984 30,19 23,19 23,13 21,13 21,27 23,27 23,21 30,21 30,27 32,27 32,20.984 		"/>
-                	</g>
-                </g>
-              </svg>
+              <img src="../img/logo.svg" alt="Younes Hadry Logo">
             </div><!-- /.header-title -->
           </div><!-- /.navbar-header -->
                 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-left">
-              <li><a href="index.html" class="menu-link">HOME</a></li>
-              <li><a href="about.html" class="menu-link">about</a></li>
-              <li><a href="https://www.dribbble.com/hadry" class="menu-link" target="_blank">WORK</a></li>
-              <li><a href="https://medium.com/@hadryounes" class="menu-link" target="_blank">blog</a></li>
+            <ul class="nav navbar-nav">
+              <li class="mobile-home"><a href="index.html" class="menu-link">HOME</a></li>
+              <li><a href="about.html" class="menu-link">ABOUT</a></li>
+              <li><a href="portfolio.html" class="menu-link">PORTFOLIO</a></li>
+              <li class="menu-logo">
+                <a href="index.html">
+                  <img src="../img/logo.svg" alt="Younes Hadry Logo">
+                </a> 
+              </li>
+              <li><a href="process.html" class="menu-link">PROCESS</a></li>
+              <!--<li><a href="https://medium.com/@hadryounes" class="menu-link" target="_blank">BLOG</a></li>-->
               <li><a href="contact.html" class="menu-link">Contact</a></li>
             </ul>
-            <a href="contact.html" class="hire-me" style="float:right">Hire me !</a>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav><!-- /.navbar -->
@@ -76,7 +70,7 @@
                             </h1>
                             
                             <p>
-                                I am a <span class="bold">freelance Product Designer, Front-end Developer</span> and <span class="bold">Entrepreneur</span>.
+                                I am a <span class="bold">Product Designer, Front-end Developer</span> and <span class="bold">Entrepreneur</span>.
                                 I've been collaborating with companies around the world, designing, building and delivering beautiful yet functional user-centered applications for web and mobile.
                                 I am also co-founder of <a href="http://www.pricyme.com" target="_blank" class="bold">Pricyme</a> and <a href="#" target="_blank" class="bold">Pricemetrics</a>.
                             </p>
@@ -87,12 +81,7 @@
             <hr> 
             <section class="content-section" id="skills">
                 <h2><span class="section-title">My Skills</span></h2>
-                <!--<p class="center">
-                    I could be your :
-                </p>
-    
-                <div class="push"></div>
-                -->
+
                 <div class="my-skills">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

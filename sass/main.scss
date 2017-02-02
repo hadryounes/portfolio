@@ -63,6 +63,10 @@ url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4
 
 // Custom Style
 
+.nav>li>a {
+    padding: 15px 20px !important;
+}
+
 .align-center {
     text-align:center;
 }
@@ -104,6 +108,9 @@ a, a:visited {
 #logo {
     height:50px;
     width:50px;
+    display: block;
+    width: auto;
+    margin: auto;
 }
 
 .navbar {
@@ -154,9 +161,30 @@ a, a:visited {
 }
 
 .navbar-nav {
-    margin-left:70px;
+    margin-left: auto;
     margin-top:13px;
+    margin-left: auto;
+    margin: auto;
+    width: 543px;
+    //padding-left: 5px;
+    clear: both;
+    float: none;
+    display: block;
+    
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .header-title {
+      display: none;
+    }
+    .nav>li.mobile-home {
+        display: none;
+    }
+}
+
+
 
 
 //Exclusive Large screens setup
@@ -491,9 +519,9 @@ a, a:visited {
         }
     }
     
-    .navbar-nav {
+/*    .navbar-nav {
         margin-left: 30px;
-    }
+    }*/
     
     .hire-me, .hire-me:visited {
         padding: 14px 30px;
@@ -501,7 +529,7 @@ a, a:visited {
     }
     
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-        border-color: transparent;
+        //border-color: transparent;
     }
     
     .header-title {
@@ -558,17 +586,18 @@ a, a:visited {
         line-height: 1.5em;
     }
     
-    .navbar-nav {
+/*    .navbar-nav {
         margin-left: 0px;
         margin-top: 0px;
         text-align: center;
-    }
+    }*/
     
     .navbar-nav>li>a {
         padding-top: 15px;
         padding-bottom: 15px;
-        line-height: 20px;
+        line-height: 47px;
     }
+    
     
     .navbar-collapse {
         padding-left: 0px;
@@ -577,6 +606,10 @@ a, a:visited {
     
     .navbar-nav>li {
         border-bottom: 1px solid #f1f1f1;
+    }
+    
+    .navbar-nav>li:last-child {
+        border-bottom: 0;
     }
     
     .hire-me, .hire-me:visited {
@@ -594,9 +627,9 @@ a, a:visited {
         width:100%;
     }
         
-    .navbar-nav {
+/*    .navbar-nav {
         margin-bottom: 0px;
-    }
+    }*/
     
 
 }
@@ -773,6 +806,37 @@ a, a:visited {
 
     
     .navbar-nav {
-        margin: 7.5px 0px 0px; 
+        margin: 7.5px auto; 
     }
+    
+    .navbar-nav {
+        text-align: center;
+        margin: auto;
+        width: auto;
+        padding-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav>li.menu-logo {
+        display: none;
+    }
+    
+    .nav>li.mobile-home {
+        display: block;
+    }
+}
+
+.nav>li.menu-logo>a {
+    padding: 15px 20px !important;
+}
+
+.nav>li>a {
+    padding: 15px 20px !important;
+}
+
+.navbar-nav>li>a {
+    line-height: 47px;
 }
