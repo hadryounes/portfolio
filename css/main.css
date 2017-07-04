@@ -597,6 +597,17 @@ pre {
 
   .contact-section h2 {
     line-height: 2.1em; } }
+#contact-form {
+  position: relative;
+  margin-top: 40px; }
+  #contact-form input.form-control, #contact-form textarea.form-control {
+    border-radius: 0;
+    box-shadow: none; }
+  #contact-form label.error {
+    font-size: 12px;
+    font-weight: normal;
+    color: red; }
+
 .about-section {
   margin-top: 100px; }
   .about-section h1 {

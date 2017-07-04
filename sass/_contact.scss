@@ -200,3 +200,18 @@
         line-height: 2.1em;
     }
 }
+
+
+#contact-form {
+    position: relative;
+    margin-top: 40px;
+    input.form-control, textarea.form-control {
+        border-radius:0;
+        box-shadow:none;
+    }
+    label.error {
+        font-size: 12px;
+        font-weight: normal;
+        color: red;
+    }
+}
