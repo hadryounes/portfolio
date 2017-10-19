@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Edit Product</title>
+
+    <!-- Bootstrap Style Sheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Style Sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Date Time Picker -->
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <!-- FancySelect -->
+    <link href="css/fancySelect.css" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar">
+          
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Product Manager</a>
+        </div><!-- END .navbar-header -->
+        <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" style="padding-right: 0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <div class="avatar">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  Welcome,  Jane Doe !<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- END .navbar-collapse -->
+        </div><!-- END .container-fluid -->
+      </nav>
+        
+      <div class="subnav">
+        <div class="container-fluid">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="menu-item">
+              <a href="category_manager.html">Categories</a>
+            </li>
+            <li class="menu-item active">
+              <a href="products_list.html">Products</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Settings</a>
+            </li>
+          </ul>
+          <a href="#" class="help-link"><i class="fa fa-life-ring"></i></a>
+        </div><!-- END .container-fluid -->
+      </div><!-- END .subnav -->
+    </header>
+    
+    <div class="container-fluid">
+      <div class="title-banner">
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="page-title">
+              <h3>Add/Edit iPhone 6S</h3>
+            </div><!-- END .page-title -->
+          </div><!-- END .col-lg-10 -->
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            
+            <!-- Search engine -->
+            <div class="form-group banner-search">
+              <label for="banner_search" class="sr-only">Search</label>
+              <div class="input-group">  
+                <input type="text" class="form-control"placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span><i class="fa fa-search"></i></span>
+                  </button>
+                </span>
+              </div><!-- END .input-group -->
+            </div><!-- END .form-group -->
+            <!-- END Search Engine -->
+            
+          </div><!-- END .col-lg-2 -->
+        </div><!-- END .row -->
+      </div><!-- END .title-banner -->
+    </div><!-- END .container-fluid -->
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+          <div class="container-box sidebar">
+            <div class="sidebar-product">
+               <img class="centered" src="img/iphone-l.jpg">
+            </div><!-- END .sidebar-product -->
+            
+            <div class="sidebar-tabs">
+              <!-- nav-tabs -->
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#group_1" data-toggle="tab">ID’s, Types & Other Details</a></li>
+                <li><a href="#group_2" data-toggle="tab">Prices & Suppliers</a></li>
+                <li><a href="#group_3" data-toggle="tab">Product Images & SEO</a></li>
+                <li><a href="#group_4" data-toggle="tab">Custom Fields</a></li>
+              </ul>
+              <!-- END nav-tabs -->
+            </div><!-- END .sidebar-tabs -->
+            
+          </div><!-- END .sidebar -->
+        </div><!-- END .col-lg-3 -->
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+          <div class="container-box content tab-content">
+            
+            <!--############## Group 1 ##############-->
+            <div class="tab-pane active" id="group_1">
+              <form>
+                <div class="content-head">
+                  <h3 class="title">
+                    ID’s, Types & Other Details
+                  </h3><!-- END .title -->
+                  <button type="button" class="btn save-btn right form-btn">Save</button>
+                </div><!-- END .content-head -->
+                <!-- PRODUCT IDS -->
+                <div class="content-section">
+                  <h4>Product ID’s</h4>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="supplier_number">Supplier Number</label>
+                        <input type="text" class="form-control" id="supplier_number" placeholder="Supplier Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="internal_code">Internal Code</label>
+                        <input type="text" class="form-control" id="internal_code" placeholder="Internal Code">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->   
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="model_number">Model Number</label>
+                        <input type="text" class="form-control" id="model_number" placeholder="Model Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="part_number">Part Number</label>
+                        <input type="text" class="form-control" id="part_number" placeholder="Part Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->   
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="account_item_number">Account Item Number</label>
+                        <input type="text" class="form-control" id="account_item_number" placeholder="Account Item Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="isbn_number">ISBN Number</label>
+                        <input type="text" class="form-control" id="isbn_number" placeholder="ISBN Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="ean_number">EAN</label>
+                        <input type="text" class="form-control" id="ean_number" placeholder="EAN Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->   
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="upc_number">UPC</label>
+                        <input type="text" class="form-control" id="upc_number" placeholder="UPC Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="sku_number">SKU</label>
+                        <input type="text" class="form-control" id="sku_number" placeholder="SKU Number">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->   
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+                
+                <!-- TYPES -->
+                <div class="content-section">
+                  <h4>Types</h4>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="short_name">Short Name</label>
+                        <input type="text" class="form-control" id="short_name" placeholder="Short Name">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->   
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="product_type">Product Type</label>
+                        <select class="modal-select">
+                          <option value="">Pick a type...</option>
+                          <option>Alpha</option>
+                          <option>Bravo</option>
+                          <option>Charlie</option>
+                          <option>Delta</option>
+                          <option>Echo</option>
+                        </select>
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-4 -->
+                  </div><!-- END .row -->
+                  <div class="row">
+                    <div class="col-md-4">
+                      <label for="category_description">Description</label>
+                      <textarea class="form-control" id="product_description" rows="6"></textarea>
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-md-8">
+                      <label for="product_long_description">Long Description</label>
+                      <textarea class="form-control" id="product_long_description" rows="6"></textarea>
+                    </div><!-- END .col-md-8 -->
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+                
+                <!-- Other Details -->
+                <div class="content-section">
+                  <h4>Other Details</h4>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="product_brand">Brand</label>
+                        <input type="text" class="form-control" id="product_brand" placeholder="Brand">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="product_weight">Product Weight</label>
+                        <input type="text" class="form-control" id="product_weight" placeholder="Product Weight">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->   
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="product_total_weight">Total Weight <span class="hidden-md hidden-sm hidde-xs">(including packaging)</span></label>
+                        <input type="text" class="form-control" id="product_total_weight" placeholder="Product Total Weight">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="product_display">Display</label>
+                        <select class="modal-select">
+                          <option value="">Pick a display...</option>
+                          <option>Alpha</option>
+                          <option>Bravo</option>
+                          <option>Charlie</option>
+                          <option>Delta</option>
+                          <option>Echo</option>
+                        </select>
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-6 col-md-4">
+                      <div class="form-group">
+                        <label for="product_permalink">URL - Permalink</label>
+                        <input type="text" class="form-control" id="product_permalink" placeholder="http://www.example.com/product/">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-6 -->
+                    <div class="col-lg-3 col-md-6">
+                      <div class="form-group">
+                        <label for="product_active_from">Active from</label>
+                        <div class="input-group date" id="product_active_from">
+                          <input type="text" class="form-control">
+                          <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                        </div>
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-lg-4 -->
+                    <div class="col-lg-3 col-md-6">
+                      <div class="form-group">
+                        <label for="product_active_to">Active to</label>
+                        <div class="input-group date" id="product_active_to">
+                          <input type="text" class="form-control">
+                          <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </span>
+                        </div><!-- END input-group -->
+                      </div><!-- END form-group -->
+                    </div><!-- END .col-lg-4 -->
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+                
+              </div><!-- END .tab-pane -->
+              
+              <!--############## Group 2 ##############-->
+              <div class="tab-pane" id="group_2">
+              <form>  
+                <div class="content-head">
+                  <h3 class="title">
+                    Prices & Suppliers  
+                  </h3><!-- END .title -->
+                  <button type="button" class="btn save-btn right form-btn">Save</button>
+                </div><!-- END .content-head -->
+                
+                <div class="content-section">
+                  <h4>Prices</h4>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="suggested_petail_price">Suggested Retail Price</label>
+                        <input type="text" class="form-control" id="suggested_petail_price" placeholder="Suggested Retail Price">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="actual_selling_price">Actual Selling Price</label>
+                        <input type="text" class="form-control" id="actual_selling_price" placeholder="Actual Selling Price">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->   
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="item_cost">Item Cost or Average Cost</label>
+                        <input type="text" class="form-control" id="item_cost" placeholder="Item Cost or Average Cost">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="starting_price">Starting Price</label>
+                        <input type="text" class="form-control" id="starting_price" placeholder="Starting Price">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->   
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="minimum_price">Minimum Price</label>
+                        <input type="text" class="form-control" id="minimum_price" placeholder="Minimum Price">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="maximum_price">Maximum Price</label>
+                        <input type="text" class="form-control" id="maximum_price" placeholder="Maximum Price">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->   
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="special_price">Special Price (sale)</label>
+                        <input type="text" class="form-control" id="special_price" placeholder="Special Price">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="tax_class">Tax Class</label>
+                        <input type="text" class="form-control" id="tax_class" placeholder="Tax Class">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 --> 
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+                
+                <div class="content-section">
+                  
+                  <h4>Inventory</h4>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="per_product_option"># Per product option</label>
+                        <input type="text" class="form-control" id="per_product_option" placeholder="">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="per_combination"># Per combination of options</label>
+                        <input type="text" class="form-control" id="per_combination" placeholder="">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->   
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="max_allowed_purchase">Max Allowed to Purchase</label>
+                        <input type="text" class="form-control" id="max_allowed_purchase" placeholder="">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->
+                    <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="min_allowed_purchase">Minimum Allowed to Purchase</label>
+                        <input type="text" class="form-control" id="min_allowed_purchasee" placeholder="">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-md-3 -->   
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+                
+                <div class="content-section">
+                  
+                  <h4>Suppliers</h4>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="supplier-tab">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                              <h5 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div class="row">
+                                    <div class="col-md-5">
+                                      Supplier 1
+                                    </div>
+                                    <div class="col-md-3">
+                                      ID : #258415
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="supplier-actions">
+                                        <div class="supplier-action">
+                                          <i class="fa fa-times"></i>
+                                        </div>
+                                        <div class="supplier-action">
+                                          <i class="fa fa-check"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div><!-- END .row -->
+                                </a>
+                              </h5>
+                            </div><!-- END .panel-heading -->
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_name">Name</label>
+                                      <input type="text" class="form-control" id="supplier_name" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_id">Supplier ID</label>
+                                      <input type="text" class="form-control" id="supplier_id" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->   
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="catalog_id">ID in Catalog</label>
+                                      <input type="text" class="form-control" id="catalog_id" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="catalog_name">Name in Catalog</label>
+                                      <input type="text" class="form-control" id="catalog_name" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->   
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_last_price">Last Price</label>
+                                      <input type="text" class="form-control" id="supplier_last_price" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_minimum_order">Minimum Order Quantity</label>
+                                      <input type="text" class="form-control" id="supplier_minimum_order" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->   
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_units">Units</label>
+                                      <input type="text" class="form-control" id="supplier_units" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_lead_time">Lead Time Days</label>
+                                      <input type="text" class="form-control" id="supplier_lead_time" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->   
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="supplier_fees">Fees</label>
+                                      <input type="text" class="form-control" id="supplier_fees" placeholder="">
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="availability_from">Availability From Date</label>
+                                      <div class="input-group date" id="availability_from">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">
+                                          <i class="fa fa-calendar"></i>
+                                        </span>
+                                      </div><!-- END input-group -->
+                                    </div><!-- END form-group -->
+                                  </div><!-- END .col-md-3 -->   
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="availability_through">Availability Through Date</label>
+                                      <div class="input-group date" id="availability_through">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">
+                                          <i class="fa fa-calendar"></i>
+                                        </span>
+                                      </div><!-- END input-group -->
+                                    </div><!-- END form-group -->
+                                  </div><!-- END .col-md-3 -->
+                                  <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                      <label for="drop_available">Drop Ship Available ?</label>
+                                      <div class="radio-group">
+                                        <div class="radio" style="display:inline-block">
+                                          <label>
+                                            <input type="radio" name="drop_available_radio" id="drop_available" value="yes">
+                                            Yes
+                                          </label>
+                                        </div><!-- END .radio -->
+                                        <div class="radio" style="display:inline-block; margin-left:20px">
+                                          <label>
+                                            <input type="radio" name="drop_available_radio" id="drop_unavailable" value="no">
+                                            No
+                                          </label>
+                                        </div><!-- END .radio -->
+                                      </div><!-- END .radio-group -->
+                                    </div><!-- END .form-group -->
+                                  </div><!-- END .col-md-3 -->   
+                                </div><!-- END .row -->
+                              </div><!-- END .panel-body -->
+                            </div><!-- END #collapseOne -->
+                          </div><!-- .panel -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                              <h5 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <div class="row">
+                                    <div class="col-md-5">
+                                      Supplier 2
+                                    </div>
+                                    <div class="col-md-3">
+                                      ID : #258415
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="supplier-actions">
+                                        <div class="supplier-action">
+                                          <i class="fa fa-times"></i>
+                                        </div>
+                                        <div class="supplier-action">
+                                          <i class="fa fa-edit"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div><!-- END .row -->
+                                </a>
+                              </h5>
+                            </div><!-- END .panel-heading -->
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div><!--END .panel-body -->
+                            </div><!-- END #collapseTwo- -->
+                          </div><!-- END .panel -->
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                              <h5 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <div class="row">
+                                    <div class="col-md-5">
+                                      Supplier 1
+                                    </div>
+                                    <div class="col-md-3">
+                                      ID : #258415
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="supplier-actions">
+                                        <div class="supplier-action">
+                                          <i class="fa fa-times"></i>
+                                        </div>
+                                        <div class="supplier-action">
+                                          <i class="fa fa-edit"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div><!-- END .row -->
+                                </a>
+                              </h5>
+                            </div><!-- END .panel-heading -->
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div><!--END .panel-body -->
+                            </div><!-- END #collapseThree -->
+                          </div><!-- END .panel -->
+                        </div><!-- END .panel-group -->
+                      </div><!-- END .supplier-tab -->
+                    </div><!-- END .col-md-12 -->
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+              </form>  
+            </div><!-- END .tab-pane --> 
+            
+            <!--############## Group 3 ##############-->
+            
+            <div class="tab-pane" id="group_3">
+              <form>
+                <div class="content-head">
+                  <h3 class="title">
+                    Product Images & SEO 
+                  </h3><!-- END .title -->
+                  <button type="button" class="btn save-btn right form-btn">Save</button>
+                </div><!-- END .content-head -->
+                
+                <div class="content-section">
+                  <h4>Product Images</h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                      <!-- File uploader area -->
+                      <label for="file">Upload Image</label>
+                      <div class="box" style="height:200px; margin-bottom:20px">  
+                        <input type="file" name="file" id="file" class="inputfile" />
+                        <label for="file" style="margin-top:80px"><i class="fa fa-upload"></i> Choose a file</label>
+                      </div><!-- END .box -->
+                      <!-- Form inputs area -->
+                      <div class="form-group">
+                        <label for="image_title">Image Title</label>
+                        <input type="text" class="form-control" id="image_title" placeholder="">
+                      </div><!-- END .form-group -->
+                      <div class="form-group">
+                        <label for="drop_available" class="sr-only">Image Type</label>
+                        <div class="radio-group">
+                          <div class="radio" style="display:inline-block">
+                            <label>
+                              <input type="radio" name="img_type" id="main_img" value="main_img">
+                              Main Image
+                            </label>
+                          </div><!-- END .radio -->
+                          <div class="radio" style="display:inline-block; margin-left:13px">
+                            <label>
+                              <input type="radio" name="img_type" id="thumb_img" value="thumb_img">
+                              Thumbnail
+                            </label>
+                          </div><!-- END .radio -->
+                          <div class="radio" style="display:inline-block; margin-left:13px">
+                            <label>
+                              <input type="radio" name="img_type" id="other_img" value="other_img">
+                              Other Images
+                            </label>
+                          </div><!-- END .radio -->
+                        </div><!-- END .radio-group -->
+                      </div><!-- END .form-group -->
+                      <div class="add-img-btns">
+                        <button type="button" class="btn add-img-btn form-btn">Add</button>
+                        <button type="button" class="btn reset-img-btn form-btn">Reset</button>
+                      </div>
+                    </div><!-- END .col-md-4 -->
+                    <div class="col-lg-8 col-md-12">
+                      <!-- Images Gallery -->
+                      <label for="product-gallery">Product Gallery</label>
+                      <div class="gallery" id="product-gallery">
+                          <div class="gallery-row">
+                            <div class="gallery-cell">
+                              <div class="main-tag"></div>
+                              <img class="gallery-img" src="img/gallery-1.jpg" height="170" width="190">
+                              <div class="cell-hover">
+                                <div class="cell-actions">
+                                  <a href="#" class="cell-action"><i class="fa fa-edit"></i></a>
+                                  <a href="#" class="cell-action" style="margin-left:10px"><i class="fa fa-times"></i></a>
+                                </div><!-- END .cell-actions -->
+                              </div><!-- END .cell-hover -->
+                            </div><!-- END .gallery-cell -->
+                            <div class="gallery-cell">
+                              <img class="gallery-img" src="img/gallery-2.jpg" height="170" width="190">
+                              <div class="cell-hover">
+                                <div class="cell-actions">
+                                  <a href="#" class="cell-action"><i class="fa fa-edit"></i></a>
+                                  <a href="#" class="cell-action" style="margin-left:10px"><i class="fa fa-times"></i></a>
+                                </div><!-- END .cell-actions -->
+                              </div><!-- END .cell-hover -->
+                            </div><!-- END .gallery-cell -->
+                            <div class="gallery-cell">
+                              <img class="gallery-img" src="img/gallery-3.jpg" height="170" width="190">
+                              <div class="cell-hover">
+                                  <div class="cell-actions">
+                                    <a href="#" class="cell-action"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="cell-action" style="margin-left:10px"><i class="fa fa-times"></i></a>
+                                  </div><!-- END .cell-actions -->
+                              </div><!-- END .cell-hover -->
+                            </div><!-- END .gallery-cell -->
+                          </div>
+                          <div class="gallery-row last-row">
+                            <div class="gallery-cell">
+                              <img class="gallery-img" src="img/gallery-4.jpg" height="170" width="190">
+                              <div class="cell-hover">
+                                  <div class="cell-actions">
+                                    <a href="#" class="cell-action"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="cell-action" style="margin-left:10px"><i class="fa fa-times"></i></a>
+                                  </div><!-- END .cell-actions -->
+                              </div><!-- END .cell-hover -->
+                            </div>
+                            <div class="gallery-cell">
+                              <img class="gallery-img" src="img/gallery-5.jpg" height="170" width="190">
+                              <div class="cell-hover">
+                                  <div class="cell-actions">
+                                    <a href="#" class="cell-action"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="cell-action" style="margin-left:10px"><i class="fa fa-times"></i></a>
+                                  </div><!-- END .cell-actions -->
+                              </div><!-- END .cell-hover -->
+                            </div>
+                            <div class="gallery-cell" style="background:#FCFCFC">
+                              <a href="#">
+                                <img class="gallery-img three-dots" src="img/three-dots.png">
+                              </a>
+                            </div>
+                          </div>
+                      </div>  
+                      
+                    </div><!-- END .col-md-8 -->  
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+                
+                <div class="content-section">
+                  <h4>SEO</h4>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                      <label for="product_page_title">Page Title</label>
+                      <input type="text" class="form-control" id="product_page_title" placeholder="">
+                    </div><!-- END .col-lg-3 -->
+                    <div class="col-lg-4 col-md-4">
+                      <label for="product_page_meta">Meta Description</label>
+                      <input type="text" class="form-control" id="product_page_meta" placeholder="">
+                    </div><!-- END .col-lg-4 -->
+                    <div class="col-lg-5 col-md-4">
+                      <div class="form-group">
+                        <label for="product_parent">Parent Product</label>
+                        <input type="text" class="form-control" id="product_parent" placeholder="">
+                      </div><!-- END .form-group -->
+                    </div><!-- END .col-lg-5 -->
+                  </div><!-- END .row -->
+                  
+                  <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                      <label for="category_description">Description</label>
+                      <textarea class="form-control" id="category_description" rows="11"></textarea>  
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                      <div class="form-group">
+                        <label for="product_add_page_keyword">Page Keywords</label>
+                        <div class="input-group add-keywords">  
+                          <input type="text" class="form-control" id="product_add_page_keyword" placeholder="Add keywords" style="margin-bottom:0">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                              <span>ADD</span>
+                            </button>
+                          </span>
+                        </div><!-- END .input-group -->
+                      </div><!-- END .form-group -->
+          
+                      <label for="category_add_page_keyword">Selected Keywords</label>
+                      <div class="keyword-container">
+                        <div class="keyword">
+                          <span>Retina Display</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Voice recognition</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Waterproof</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Touch ID</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Fast LTE</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Fast WIFI</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Samsung</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Mobile Phones</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>iPhone 6S</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="keyword">
+                          <span>Samsung Galaxy</span>
+                          <a href="#"><i class="fa fa-times"></i></a>
+                        </div>
+                      </div><!-- END .keyword-container -->
+                      
+                    </div><!-- END .col-lg-7 -->
+                  </div><!-- END .row -->
+                </div><!-- END .content-section -->
+              </form>
+            </div><!-- END .tab-pane --> 
+            
+            <!--############## Group 4 ##############-->
+            <div class="tab-pane" id="group_4">
+              <div class="content-head">
+                <h3 class="title">
+                  Custom Fields 
+                </h3><!-- END .title -->
+                <button type="button" class="btn save-btn right form-btn">Save</button>
+              </div><!-- END .content-head -->
+              
+              <div class="content-section">
+                <h4>Add custom field</h4>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="product_parent">Field Label</label>
+                        <input type="text" class="form-control" id="custom_field_label" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-3 col-md-4">
+                      <div class="form-group">
+                        <label for="product_display">Input Type</label>
+                        <select class="modal-select">
+                          <option>Text input (default)</option>
+                          <option>Dropdown</option>
+                          <option>Text Area</option>
+                          <option>Checkbox</option>
+                          <option>Radio buttons</option>
+                        </select>
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group">
+                        <label for="product_parent">Input Name</label>
+                        <input type="text" class="form-control" id="custom_input_name" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group">
+                        <label for="product_parent">N° of Values</label>
+                        <input type="text" class="form-control" id="custom_values_number" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                    <button class="btn btn-default custom-create" type="button">
+                      <span>Create</span>
+                    </button>
+                  </div>
+                </div><!-- END .row -->
+                <div class="row">
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_input_value_1" class="custom-label">Value 1 <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_input_value_1" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_input_value_2" class="custom-label">Value 2 <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_input_value_2" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_input_value_3" class="custom-label">Value 3 <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_input_value_3" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_input_value_4" class="custom-label">Value 4 <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_input_value_4" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_input_value_5" class="custom-label">Value 5 <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_input_value_5" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_input_value_6" class="custom-label">Value 6 <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_input_value_6" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                </div><!-- END .row -->
+                <h4>Custom Fields</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_text_input_sample" class="custom-label">Text input <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_text_input_sample" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-4 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_dropdown_input_sample" class="custom-label">Dropdown <a href="#"><i class="fa fa-times"></i></a></label>
+                        <select class="modal-select">
+                          <option>Value 1</option>
+                          <option>Value 2</option>
+                          <option>Value 3</option>
+                          <option>Value 4</option>
+                          <option>Value 5</option> 
+                        </select>
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-4 col-md-3">
+                      <div class="form-group custom-field">
+                        <label for="custom_text_input_sample_2" class="custom-label">Text input <a href="#"><i class="fa fa-times"></i></a></label>
+                        <input type="text" class="form-control" id="custom_text_input_sample_2" placeholder="">
+                      </div><!-- END .form-group -->
+                  </div>
+                  <div class="col-lg-8 col-md-6">
+                    <div class="form-group custom-field">
+                      <label for="custom_text_area_sample" class="custom-label">Text area <a href="#"><i class="fa fa-times"></i></a></label>
+                      <textarea class="form-control" id="custom_text_area_sample" rows="6"></textarea>
+                    </div><!-- END .form-group -->
+                  </div><!-- END .col-md-4 -->
+                  <div class="col-lg-4 col-md-6">
+                      <div class="form-group custom-field">
+                        <label for="custom_text_input_sample_2" class="custom-label">Radio Buttons <a href="#"><i class="fa fa-times"></i></a></label>
+                        <div class="radio-group">
+                          <div class="radio" style="display:inline-block">
+                            <label>
+                              <input type="radio" name="img_type" id="main_img" value="main_img">
+                              Value 1
+                            </label>
+                          </div><!-- END .radio -->
+                          <div class="radio" style="display:inline-block; margin-left:13px">
+                            <label>
+                              <input type="radio" name="img_type" id="thumb_img" value="thumb_img">
+                              Value 2
+                            </label>
+                          </div><!-- END .radio -->
+                          <div class="radio" style="display:inline-block; margin-left:13px">
+                            <label>
+                              <input type="radio" name="img_type" id="other_img" value="other_img">
+                              Value 3
+                            </label>
+                          </div><!-- END .radio -->
+                        </div><!-- END .radio-group -->
+                      </div><!-- END .form-group -->
+                      <div class="form-group custom-field">
+                        <label for="custom_text_input_sample_2" class="custom-label">Text input <a href="#"><i class="fa fa-times"></i></a></label>
+                        <div class="checkbox-group">
+                          <div class="checkbox" style="display:inline-block;">
+                              <label>
+                                <input type="checkbox" > Value 1
+                              </label>
+                          </div>
+                          <div class="checkbox" style="display:inline-block; margin-left:13px">
+                              <label>
+                                <input type="checkbox"> Value 2
+                              </label>
+                          </div>
+                          <div class="checkbox"  style="display:inline-block; margin-left:13px">
+                              <label>
+                                <input type="checkbox"> Value 3
+                              </label>
+                          </div>
+                        </div><!-- END .checkbox-group -->
+                      </div><!-- END .form-group -->
+                  </div>
+                </div><!-- END .row -->
+              </div><!-- END .content-section -->
+            </div><!-- END .tab-pane -->
+            
+          </div><!-- END .tab-content .container-box .content -->
+        </div><!-- END .col-lg-3 -->
+      </div><!-- END .row -->
+    </div><!-- END .container-fluid -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/moment.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/fancySelect.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('.modal-select').fancySelect();
+      });
+      $(function () {
+        $('#category_active_from').datetimepicker();
+        $('#category_active_to').datetimepicker();
+        $('#product_active_from').datetimepicker();
+        $('#product_active_to').datetimepicker();
+        $('#availability_from').datetimepicker();
+        $('#availability_through').datetimepicker();
+      });
+    </script>
+  </body>
+</html>

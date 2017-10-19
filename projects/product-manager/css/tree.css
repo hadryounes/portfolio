@@ -1,0 +1,166 @@
+
+/**
+ * Leaf Folder icons
+ */
+ 
+span.fancytree-node {
+    margin-top:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul.fancytree-container ul {
+    padding: .3em 0 0 0.8em;
+    margin: 0;
+}
+
+
+
+
+#tree.pmTree span.fancytree-node > span.fancytree-icon {
+  display: none;
+}
+#tree.pmTree span.fancytree-node.fancytree-active > span.fancytree-icon {
+  display: none;
+}
+
+#tree.pmTree span.fancytree-node > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: -56px 0;
+}
+#tree.pmTree span.fancytree-node.fancytree-active  > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: -56px -18px;
+}
+
+
+/**
+ * Parent Folder icons
+ */
+
+#tree.pmTree span.fancytree-node.fancytree-folder > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: -18px -19px;
+}
+#tree.pmTree span.fancytree-node.fancytree-folder.fancytree-expanded > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: -18px 0;
+}
+
+
+#tree.pmTree span.fancytree-node.fancytree-active.fancytree-folder > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: -37px -19px;
+}
+#tree.pmTree span.fancytree-node.fancytree-active.fancytree-folder.fancytree-expanded > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: -37px 0;
+}
+
+
+#tree.pmTree span.fancytree-node .fancytree-active-parent .fancytree-folder > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: 1px -19px;
+}
+#tree.pmTree span.fancytree-node.fancytree-active-parent.fancytree-folder.fancytree-expanded > span.fancytree-expander {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-image: url('../img/folders-sprint.png');
+    background-position: 1px 0;
+}
+
+#tree.pmTree .fancytree-node .fancytree-title {
+    color:#8f8f8f;
+}
+
+#tree.pmTree span.fancytree-node.fancytree-active-parent.fancytree-folder.fancytree-expanded>span.fancytree-title {
+    color:#464646;
+}
+
+#tree.pmTree .fancytree-active .fancytree-title {
+    color:#4dd085;
+}
+
+ul.fancytree-container {
+    /**/font-family: tahoma,arial,helvetica;
+    border:none;
+    padding-bottom:30px;
+}
+
+#tree.pmTree ul li:before {
+    position: absolute;
+    left: -22px;
+    top: 1px;
+    content: '';
+    display: block;
+    border-left: 1px solid #ddd;
+    height: 1em;
+    border-bottom: 1px solid #ddd;
+    width: 20px;
+}
+
+#tree.pmTree ul li:after {
+    position: absolute;
+    left: -22px;
+    bottom: -10px;
+    content: '';
+    display: block;
+    border-left: 1px solid #ddd;
+    height: 115%;
+}
+
+
+
+span.fancytree-title {
+    margin: 0 0 0 .2em;
+}
+
+#tree.pmTree span.fancytree-node.fancytree-active > span.fancytree-expander {
+    background-position: -56px -19px;
+}
+
+#tree.pmTree span.fancytree-node.fancytree-folder > span.fancytree-expander {
+    background-position: -18px -19px;
+}
+
+#tree.pmTree ul {
+    margin: 0px 0px 0px 20px;
+}
