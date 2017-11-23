@@ -625,7 +625,7 @@ pre {
       text-decoration: underline !important; }
   .about-section ul > li {
     font-size: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-left: 20px;
     background-image: url("../img/green-square.gif");
     background-position: 0px 7px;
